@@ -1,4 +1,5 @@
-FROM ubuntu:xenial
+FROM ubuntu:18.04
+# tacacs+ is not an included package anymore in Ubuntu 20.04+
 
 RUN apt-get update
 RUN apt-get install tacacs+ -y
